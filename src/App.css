@@ -9,7 +9,9 @@ body {
 :root {
   --primary-white: #fff;
   --primary-blue: #40e0d0;
-  --primary-dark: rgba(255,255,255, 0)
+  --primary-dark: rgba(255,255,255, 0);
+  --primary-lg: #817e7e;
+  --primary-hover-lg: #bdbdbd;
 
 }
 
@@ -49,4 +51,52 @@ nav ul li {
 
 .navbar-nav > li > a:hover {
   border-top: 0.1875rem solid var(--primary-blue);
+}
+
+/****************************** HEADER **************************/
+
+.header-wrapper {
+  position: relative;
+  background-image: url(jumbotron.jpg);
+  background-size: cover;
+  background-position: cover;
+  height: 90vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed' sans-serif;
+}
+
+.main-info h1 {
+  color: var(--primary-lg);
+  text-transform: uppercase;
+}
+
+/************** Typed Text **************/
+
+.typed-text {
+  font-size: 2rem;
+  color: var(--primary-lg);
+}
+
+
+/******** header main offer button ********/
+.btn-main-offer {
+  border: 1px solid var(--primary-lg);
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: var(--primary-white);
+  background-color: var(--primary-blue);
+  margin: 2rem;
 }
