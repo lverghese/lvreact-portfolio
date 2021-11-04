@@ -51,6 +51,14 @@ nav ul li {
   padding-left: 50px !important;
 }
 
+@media(max-width: 768px) {
+  .navbar-brand {
+    width: 7rem;
+  }
+
+  
+}
+
 .navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
   border-top: 0.1875rem solid var(--primary-blue);
 }
@@ -96,23 +104,18 @@ nav ul li {
   color: var(--primary-lg);
 }
 
+@media(max-width: 768px) {
+  .typed-text {
+    font-size: 1.3rem;
+  }
 
-/******** header main offer button ********/
-.btn-main-offer {
-  border: 1px solid var(--primary-lg);
-  text-transform: uppercase;
-  border-radius: 0;
-  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
-  color: var(--primary-lg);
-  margin: 2rem;
+  .main-info h1 {
+    font-size: 1.7rem;
+  }
 }
 
-.btn-main-offer:hover {
-  text-decoration: none;
-  background-color: var(--primary-blue);
-  color:var(--primary-white)
-  
-}
+
+
 
 
 /************* TS PARTICLES************/
@@ -121,4 +124,10 @@ nav ul li {
   height: 100vh;
   width: 100vw;
   z-index: 1;
+}
+
+@media(max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
 }
